@@ -67,6 +67,7 @@ int main(int argc, char** argv)
 			state=STOPING;
 			//fprintf(stderr,"%i", read);
 			putc(read,stdout);
+			fflush(stdout);
 			break;
 			case STOPING:
 			if (cur&port)

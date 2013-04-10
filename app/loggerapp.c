@@ -75,6 +75,7 @@ static void capture_callback(struct libusb_transfer *transfer) {
 			fwrite(&(transfer->buffer[512+3]), sizeof(char), 256-3, stdout);
 		if (transfer->buffer[768]==0xff)
 			fwrite(&(transfer->buffer[768+3]), sizeof(char), 256-3, stdout);
+		fflush(stdout);
 	}
 	if (transfer->status == LIBUSB_TRANSFER_COMPLETED)
 		libusb_submit_transfer(transfer);
