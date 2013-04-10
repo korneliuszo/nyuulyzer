@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (Loggerapp)
+add_executable(loggerapp loggerapp.c)
+target_link_libraries(loggerapp usb-1.0)
+add_executable(serialdec serialdec.c)
