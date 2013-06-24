@@ -116,7 +116,7 @@ OBJDIR = .
 
 
 # Path to the LUFA library
-LUFA_PATH = ../submodules/LUFA/trunk
+LUFA_PATH = ../submodules/LUFA
 
 
 # LUFA library compile-time options and predefined tokens
